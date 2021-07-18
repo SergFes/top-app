@@ -9,8 +9,8 @@ type HomeProps = {
     menu: TMenuItem[];
     firstCategory: number;
 };
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 function Home({ menu, firstCategory }: HomeProps) {
-    console.info(firstCategory, menu);
     const [rating, setRating] = useState(4);
     const handleSetRating = useCallback(
         (rating: number) => {
